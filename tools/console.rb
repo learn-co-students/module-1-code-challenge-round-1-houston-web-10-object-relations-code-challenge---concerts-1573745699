@@ -4,6 +4,12 @@ def reload
   load 'config/environment.rb'
 end
 
-# Test Code Goes Here
+travis = Band.new("travis","houston")
 
-Pry.start
+nrg = Venue.new("nrg","houston")
+
+astroworld = Concert.new("01/01/19", travis, "park")
+
+travis.concert
+
+binding.pry
